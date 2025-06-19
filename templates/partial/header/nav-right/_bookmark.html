@@ -1,0 +1,23 @@
+{% load static %}
+
+<li class="custom-dropdown">
+    <a href="javascript:void(0)">
+        <svg id="Bookmark" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path
+                d="M5.6082 16.4166C6.29153 15.6833 7.3332 15.7416 7.9332 16.5416L8.77486 17.6666C9.44986 18.5583 10.5415 18.5583 11.2165 17.6666L12.0582 16.5416C12.6582 15.7416 13.6999 15.6833 14.3832 16.4166C15.8665 18 17.0749 17.475 17.0749 15.2583V5.86663C17.0749 2.50829 16.2915 1.66663 13.1415 1.66663H6.84154C3.69154 1.66663 2.9082 2.50829 2.9082 5.86663V15.25C2.91654 17.475 4.1332 17.9916 5.6082 16.4166Z"
+                stroke-opacity="0.8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path opacity="0.4" d="M7.70825 8.33337H12.2916" stroke-opacity="0.8" stroke-width="1.5"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </a>
+    <div class="custom-menu bookmark-dropdown py-0 overflow-hidden">
+        <h3 class="title bg-primary-light dropdown-title">Bookmark</h3>
+        <ul> 
+            {% include 'partial/header/nav-right/bookmark/_search.html' %}
+            {% include 'partial/header/nav-right/bookmark/_primary.html' %}
+            {% include 'partial/header/nav-right/bookmark/_secondary.html' %}
+            {% include 'partial/header/nav-right/bookmark/_danger.html' %}
+            
+        </ul>
+    </div>
+</li>

@@ -1,0 +1,18 @@
+{% load static %}
+<li class="profile-nav custom-dropdown">
+    <div class="user-wrap">
+        <div class="user-img"><img src="{% static 'vendor/assets/images/profile.png' %}" alt="user"/></div>
+        <div class="user-content">
+            <h6>Luciano Lopes</h6>
+            <p class="mb-0">Gestor<i class="fa-solid fa-chevron-down"></i></p>
+        </div>
+    </div>
+    <div class="custom-menu overflow-hidden">
+        <ul class="profile-body">
+            {% include 'partial/header/nav-right/user/_profile.html' %}
+            {% include 'partial/header/nav-right/user/_message.html' %}
+            {% include 'partial/header/nav-right/user/_task.html' %}
+            {% include 'partial/header/nav-right/user/_logout.html' %}
+        </ul>
+    </div>
+</li>

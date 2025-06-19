@@ -1,0 +1,17 @@
+{% load static %}
+
+<!-- Page sidebar start-->
+<aside class="page-sidebar"> 
+    <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
+    <div class="main-sidebar" id="main-sidebar">
+        <ul class="sidebar-menu" id="simple-bar">
+            {% include 'partial/sidebar/_favorite.html' %}
+            
+            {% include 'partial/sidebar/_administration.html' %}
+            
+            {% include 'partial/sidebar/_home-dashboard.html' %}
+        </ul>
+    </div>
+    <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
+</aside>
+<!-- Page sidebar end-->

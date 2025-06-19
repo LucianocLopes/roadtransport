@@ -1,0 +1,26 @@
+{% load static %}
+<li>
+    <div class="d-flex">
+        <img class="img-fluid b-r-5 me-3 img-60" src="{% static 'vendor/assets/images/dashboard-2/1.png' %}" alt=""/>
+        <div class="flex-grow-1">
+            <span class="f-w-600">Watch multicolor</span>
+            <div class="qty-box">
+                <div class="input-group">
+                    <span class="input-group-prepend">
+                        <button class="btn quantity-left-minus" type="button" data-type="minus" data-field="">-</button>
+                    </span>
+                    <input class="form-control input-number" type="text" name="quantity" value="1"/>
+                    <span class="input-group-prepend">
+                        <button class="btn quantity-right-plus" type="button" data-type="plus" data-field="">+</button>
+                    </span>
+                </div>
+            </div>
+            <h6 class="font-primary">$500</h6>
+        </div>
+        <div class="close-circle">
+            <a class="bg-danger" href="#">
+                <i data-feather="x"></i>
+            </a>
+        </div>
+    </div>
+</li>
