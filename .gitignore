@@ -201,4 +201,4 @@ marimo/_lsp/
 __marimo__/
 
 # static 3td
-template/static/vendor/
+*/static/vendor/
