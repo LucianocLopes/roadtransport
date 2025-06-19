@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     # my apps
     'core',
+    'local',
 ]
 
 MIDDLEWARE = [
